@@ -36,7 +36,7 @@ def capturar_e_salvar():
             print("Foto salva: foto.jpg")
 
             foto_cinza = cv2.cvtColor(frame_limpo, cv2.COLOR_BGR2GRAY)
-            cv2.imwrite("Foto_cinza.png", foto_cinza)
+            cv2.imwrite("Foto_cinza.jpg", foto_cinza)
 
             foto_invertida = cv2.cvtColor(frame_limpo, cv2.COLOR_RGB2BGR)
             cv2.imwrite("foto_invertida.jpg", foto_invertida)
